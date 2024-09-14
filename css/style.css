@@ -1,0 +1,1126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainHeader {
+    width: 100%;
+    height: 47px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 10;
+}
+
+.blog {
+    position: fixed;
+    width: 110px;
+    height: 45px;
+    background-color: blue;
+    right: 220px;
+    top: 47px;
+    visibility: hidden;
+}
+
+.hidden-blog:hover .blog{
+    visibility: visible;
+}
+
+.blog p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.mainHeader .i1 {
+    height: 45px;
+    width: 50px;
+    margin-left: 150px;
+    border-radius: 15px;
+    float: left;
+}
+
+.mainHeader .ul1 {
+    list-style: none;
+    float: right;
+    margin-right: 140px;
+}
+
+.mainHeader .ul1 li {
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainHeader .ul1 li a {
+    color: rgb(156, 125, 0);
+    text-decoration: none;
+}
+
+.underline {
+    height: 2px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 3px;
+    visibility: hidden;
+}
+
+.u1 {
+    visibility: visible;
+}
+
+.mainHeader .ul1 li:hover .underline{
+    visibility: visible;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/BG.jpg);
+}
+
+.ol1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dvp {
+    width: 60%;
+    height: 200px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title1 {
+    font-size: 75px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.p1 {
+    letter-spacing: 2px;
+    margin-top: 4px;
+    color: antiquewhite;
+}
+
+.btn1 {
+    width: 150px;
+    height: 50px;
+    margin-top: 14px;
+    padding: 10px 18px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.sec {
+    background-color: blue;
+    color: white;
+    margin-left: 10px;
+}
+
+.btn1:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.welcome {
+    width: 100%;
+    height: 594px;
+    position: relative;
+}
+
+.title-w {
+    font-size: 35;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 125px;
+}
+
+.dvl-w {
+    width: 62;
+    height: 4;
+    background-color: rgb(113, 113, 241);
+    margin: auto;
+    margin-top: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.container .team-parent {
+    overflow: auto;
+}
+
+.team-item {
+    float: left;
+}
+
+.team-item-row2 {
+    float: left;
+}
+
+.welcome .container .team-parent .team-item {
+    width: 30%;
+    height: 223px;
+    border: 1px solid rgb(158, 157, 157);
+    text-align: center;
+    position: relative;
+    padding: 18px 14px;
+}
+
+.te2 {
+    margin: 0 5%;
+}
+
+.welcome .container .team-parent .team-item .team-icon {
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+.welcome .container .team-parent .team-item .team-item:hover .team-overlay {
+    visibility: visible;
+}
+
+.welcome .container .team-parent .team-item .team-icon a {
+    display: block;
+    width: 40;
+    height: 40;
+    background-color: rgba(33, 97, 180, 0.521);
+    color: rgb(229, 236, 240);
+    margin: 8px auto;
+}
+
+.welcome .container .team-parent .team-item .team-icon a i {
+    line-height: 40px;
+}
+
+.welcome .container .team-parent .team-item .team-info .team-info-title {
+    margin-top: -5px;
+    color: black;
+}
+
+.welcome .container .team-parent .team-item .team-info .team-info-paragraph {
+    margin-top: 17px;
+    color: gray;
+    text-transform: capitalize;
+    word-spacing: 5px;
+    font-size: 20px;
+}
+
+.welcome .container .team-parent .team-item .team-info .team-info-link {
+    text-decoration: none;
+    color: rgb(102, 109, 237);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.welcome .container .team-parent .team-item:hover .team-info-title {
+    color: white;
+}
+
+.welcome .container .team-parent .team-item:hover .team-info-paragraph {
+    color: rgb(194, 194, 211);
+}
+
+.welcome .container .team-parent .team-item::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.welcome .container .team-parent .team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.featured {
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    height: 1138px;
+    position: relative;
+}
+
+.t-f {
+    padding-top: 1;
+}
+
+.title-f {
+    font-size: 35;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 125px;
+}
+
+.dvl-f {
+    width: 61;
+    height: 4;
+    background-color: rgb(113, 113, 241);
+    margin: auto;
+    margin-top: 9px;
+}
+
+.featured .container {
+    width: 90%;
+    height: 100%;
+}
+
+.featured .container .team-item {
+    width: 325px;
+    height: 325px;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+    left: 96px;
+    position: relative;
+}
+
+.featured .container .team-item-row2 {
+    width: 325px;
+    height: 325px;
+    background-color: white;
+    text-align: center;
+    margin-top: 60px;
+    left: 96px;
+    position: relative;
+}
+
+.featured .te2 {
+    margin: 0 100px;
+}
+
+.featured .container .team-item .team-img {
+    position: relative;
+    top: 0;
+    left: 41px;
+    width: 75%;
+    height: 100%;
+}
+
+.featured .container .team-item-row2 .team-img {
+    position: relative;
+    top: 0;
+    left: 41px;
+    width: 75%;
+    height: 100%;
+}
+
+.featured .container .team-item .team-img .image  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.featured .container .team-item-row2 .team-img .image  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.featured img {
+    height: 100%;
+    width: 100%;
+}
+
+.featured .container .team-item .team-img .team-info {
+    position: absolute;
+    width: 148%;
+    height: 112%;
+    top: -6%;
+    left: -8%;
+    margin-left: -40px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.featured .container .team-item-row2 .team-img .team-info {
+    position: absolute;
+    width: 148%;
+    height: 112%;
+    top: -6%;
+    left: -8%;
+    margin-left: -40px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.featured .container .team-item .team-img:hover .team-info {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.featured .container .team-item-row2 .team-img:hover .team-info {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.featured .team-info-title {
+    margin-top: 125px;
+    font-size: 20px;
+    color: rgb(107, 124, 194);
+}
+
+.featured .team-info-paragraph {
+    font-size: 25px;
+    margin-top: 5px;
+    color: white;
+}
+
+.featured i {
+    font-size: 25px;
+    margin-top: 8px;
+    color: rgb(107, 124, 194);
+}
+
+.offer {
+    width: 100%;
+    height: 670px;
+    position: relative;
+}
+
+.t-o {
+    padding-top: 1px;
+}
+
+.title-o {
+    font-size: 35;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 125px;
+}
+
+.dvl-o {
+    width: 62;
+    height: 4;
+    background-color: rgb(113, 113, 241);
+    margin: auto;
+    margin-top: 9px;
+}
+
+.offer .container .team-parent .team-item {
+    width: 30%;
+    height: 170px;
+    border: 1px solid black;
+    padding: 18px 14px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.offer .container .team-parent .team-item-row2 {
+    width: 30%;
+    height: 170px;
+    border: 1px solid black;
+    padding: 18px 14px;
+    margin-top: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.offer .container .team-parent i {
+    color: rgb(33, 33, 236);
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    float: left;
+}
+
+.offer .team-info h2 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.offer .team-item:hover h2 {
+color: white;
+}
+
+.offer .team-item-row2:hover h2 {
+    color: white;
+}
+
+.offer .team-info p {
+    float: left;
+    width: 80%;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 55px;
+    line-height: 25px;
+    color: rgb(122, 122, 122);
+}
+
+.offer .container .team-parent .team-item::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.offer .container .team-parent .team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.offer .container .team-parent .team-item-row2::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.offer .container .team-parent .team-item-row2:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.offer .container .team-parent .team-item:hover .team-info-title {
+    color: white;
+}
+
+.offer .container .team-parent .team-item:hover .team-info-paragraph {
+    color: rgb(194, 194, 211);
+}
+
+.offer .container .team-parent .team-item-row2:hover .team-info-title {
+    color: white;
+}
+
+.offer .container .team-parent .team-item-row2:hover .team-info-paragraph {
+    color: rgb(194, 194, 211);
+}
+
+.choose {
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    height: 672px;
+}
+
+.t-c {
+    padding: 120px 150px;
+    float: left;
+    width: 58%;
+}
+
+.title-c {
+    font-size: 40px;
+}
+
+.dvl-c {
+    width: 62;
+    height: 4;
+    background-color: rgb(113, 113, 241);
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+.para-c {
+    margin-top: 44px;
+    line-height: 25px;
+    font-size: 20px;
+    color: grey;
+}
+
+.reasons {
+    margin-top: 25px;
+}
+
+.reasons li {
+    margin-top: 16px;
+    font-size: 17px;
+    color: grey;
+    list-style: none;
+}
+
+.reasons i {
+    color: rgb(88, 88, 255);
+
+}
+
+.choose .img-c {
+    float: left;
+    margin-left: -120px;
+    margin-top: 120px;
+    width: 480px;
+    height: 400px;
+    background-color: white;
+}
+
+.choose .img-c img {
+    width: 75%;
+    height: 100%;
+    margin-left: 60px;
+}
+
+.choose .img-c .icons {
+    font-size: 10px;
+    margin-left: 260px;
+    margin-top: 10px;
+}
+
+.choose .img-c .icons i {
+    color: rgb(152, 152, 152);
+    margin-left: 12px;
+}
+
+.choose .img-c .icons .i1 {
+    color: rgb(88, 88, 255);
+}
+
+.choose .img-c .icons i:hover {
+    color: rgb(88, 88, 255);
+}
+
+.achievements {
+    height: 350px;
+    background-image: url(../images/back1.jpg);
+    background-attachment: fixed;
+    overflow: auto;
+    position: relative;
+}
+
+.achievements .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 50%;
+}
+
+.achievements .container div {
+    float: left;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+    width: 25%;
+}
+
+.achievements .container div i {
+    color: rgb(94, 94, 238);
+    margin-top: -21px;
+}
+
+.achievements .container div h2 {
+    color: white;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.achievements .container div p {
+    color: white;
+    font-size: 20px;
+}
+
+.price {
+    background-color: rgb(232, 232, 232);
+    height: 720px;
+    position: relative;
+}
+
+.t-p {
+    padding-top: 1px;
+}
+
+.title-p {
+    font-size: 35;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 125px;
+}
+
+.dvl-p {
+    width: 62;
+    height: 4;
+    background-color: rgb(113, 113, 241);
+    margin: auto;
+    margin-top: 10px;
+}
+
+.price .container .team-parent {
+    overflow: auto;
+}
+
+.price .container .team-parent .team-item {
+    float: left;
+    width: 30%;
+    height: 350px;
+    border: 1px solid rgb(75, 75, 101);
+    text-align: center;
+    position: relative;
+    padding: 18px 14px;
+}
+
+.price .container .team-parent .team-item .team-info .team-info-title {
+    color: #2b2b2b;
+    margin-top: 5px;
+}
+
+.price .container .team-parent .team-item .team-info .info1 {
+    margin-top: 25px;
+    color: #2b2b2b;
+}
+
+.price .container .team-parent .team-item .team-info .info2 {
+    margin-top: 10px;
+    color: #2b2b2b;
+}
+
+.price .container .team-parent .team-item .team-info .info3 {
+    margin-top: 10px;
+    color: #2b2b2b;
+}
+
+.price .container .team-parent .team-item .team-info .month {
+    margin: auto;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid #766ae1;
+    background-color: rgb(228, 228, 228);
+}
+
+.price .container .team-parent .team-item .team-info .month .m1 {
+    margin-top: 7px;
+    font-size: 50px;
+}
+
+.price .container .team-parent .team-item .team-info .month .m2 {
+    font-size: 20px;
+    margin-top: -4px;
+}
+
+.purchase {
+    width: 120px;
+    height: 27px;
+    border: 2px solid #766ae1;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.purchase p {
+    margin-top: 2px;
+}
+
+.price .container .team-parent .team-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: rgb(90, 87, 87);
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+}
+
+.price .container .team-parent .team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.pair {
+    height: 350px;
+    background-image: url(../images/field.jpg);
+    background-attachment: fixed;
+    position: relative;
+    text-transform: capitalize;
+    color: white;
+}
+
+.pair .parent {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.pair .container {
+    width: 100%;
+}
+
+.pair .parent .container .item {
+    width: 32%;
+    height: 150px;
+    float: left;
+    overflow: auto;
+    margin-top: 67px;
+}
+
+.pair .parent .container .i1 {
+    margin-left: 277px;
+}
+
+.pair .parent .container .i2 {
+    margin-left: 62px;
+}
+
+.pair .parent .container .item .item-img {
+    float: left;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.pair .parent .container .item .item-info {
+    margin-left: 82px;
+    margin-top: 6px;
+}
+
+.pair .parent .container .item .item-info p {
+    color: rgb(89, 89, 255);
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.pair .parent .container .item .item-paragraph {
+    line-height: 22px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.pair .parent .container .item .item-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.our-team {
+    width: 100%;
+    height: 528px;
+    position: relative;
+}
+
+.our-team .t-ot {
+    padding-top: 1px;
+}
+
+.our-team .t-ot .title-ot {
+    font-size: 35;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 125px;
+}
+
+.our-team .t-ot .dvl-ot {
+    width: 62;
+    height: 4;
+    background-color: rgb(113, 113, 241);
+    margin: auto;
+    margin-top: 9px;
+}
+
+.our-team .container .team-parent {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.our-team .container .team-parent .te2 {
+    margin: 0 59px;
+}
+
+.our-team .container .team-parent .te3 {
+    margin: 0 -2px;
+}
+
+.our-team .container .team-parent .team-item {
+    float: left;
+    width: 320px;
+    height: 276px;
+    background-color: rgb(88, 86, 102);
+    text-align: center;
+    position: relative;
+    left: 70px;
+    top: 1px;
+    padding: 18px 14px;
+}
+
+.our-team .container .team-parent .team-item .team-img {
+    width: 91%;
+    top: -1px;
+    margin: auto;
+    position: relative;
+}
+
+.our-team .container .team-parent .team-item .team-img img {
+    width: 100%;
+    height: 185px;
+}
+
+.our-team .container .team-parent .team-item .team-img .team-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 13, 13, 0.5);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.our-team .container .team-parent .team-item:hover .team-overlay {
+    visibility: visible;
+}
+
+.our-team .container .team-parent .team-item .team-img .team-overlay a {
+    display: block;
+    width: 40;
+    height: 40;
+    background-color: rgba(178, 181, 185, 0.521);
+    color: white;
+    margin-left: auto;
+}
+
+.our-team .container .team-parent .team-item .team-img .team-overlay a i {
+    line-height: 40px;
+}
+
+.our-team .container .team-parent .team-item .team-info {
+    margin-top: 9px;
+}
+
+.our-team .container .team-parent .team-item .team-info .team-info-title {
+    color: #222;
+    font-size: 18px;
+}
+
+.our-team .container .team-parent .team-item .team-info .team-info-paragraph {
+    color: rgb(181, 170, 170);
+    text-transform: uppercase;
+    font-size: 15;
+    margin-top: 9px;
+}
+
+.our-team .container .team-parent .team-item:hover .team-info-title {
+    color: white;
+}
+
+.our-team .container .team-parent .team-item:hover .team-info-paragraph {
+    color: rgb(65, 65, 244);
+}
+
+.our-team .container .team-parent .team-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.422);
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+}
+
+.our-team .container .team-parent .team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.recent {
+    width: 100%;
+    height: 674px;
+    position: relative;
+}
+
+.recent .t-r {
+    padding-top: 1px;
+}
+
+.recent .t-r .title-r {
+    font-size: 35;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 125px;
+}
+
+.recent .t-r .dvl-r {
+    width: 62;
+    height: 4;
+    background-color: rgb(113, 113, 241);
+    margin: auto;
+    margin-top: 8px;
+}
+
+.recent .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.recent .container .team-parent {
+    width: 1218px;
+    height: 496px;
+    position: absolute;
+    background-color: rgb(250, 250, 250);
+    left: 150px;
+}
+
+.recent .container .team-parent .team-item {
+    position: relative;
+    background-color: white;
+    width: 367px;
+    height: 496px;
+}
+
+.recent .container .team-parent .te2 {
+    margin-left: 60px;
+    width: 365px;
+}
+
+.recent .container .team-parent .te3 {
+    width: 365px;
+}
+
+.recent .container .team-parent .team-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.422);
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+}
+
+.recent .container .team-parent .team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.recent .container .team-parent .team-item .team-img img {
+    width: 200px;
+    height: 250px;
+    margin-left: 25px;
+}
+
+.recent .container .team-parent .te2 .team-img img {
+    margin-left: 23px;
+}
+
+.recent .container .team-parent .te3 .team-img img {
+    margin-left: 23px;
+}
+
+.recent .container .team-parent .team-item .team-img .team-icon {
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.recent .container .team-parent .team-item .team-img .team-icon i {
+    margin-left: 15px;
+    color: rgb(77, 77, 255);
+}
+
+.recent .container .team-parent .team-item .team-info {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.recent .container .team-parent .team-item .team-info .team-info-paragraph {
+    margin-top: 25px;
+    word-spacing: 2px;
+    line-height: 23px;
+}
+
+.recent .container .team-parent .team-item .team-info .read {
+    margin-top: 18px;
+}
+
+.recent .container .team-parent .team-item .team-info .read a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(77, 77, 255);
+}
+
+.links {
+    background-color: rgb(49, 55, 60);
+    width: 100%;
+    height: 300px;
+}
+
+.links .container {
+    width: 100%;
+}
+
+.links .container .image img {
+    height: 70px;
+    width: 160px;
+    margin-top: 60px;
+    margin-left: 680px;
+
+}
+
+.links .container .link {
+    margin-top: 20px;
+    margin-left: 593px;
+
+}
+
+.links .container .link .icon {
+    float: left;
+}
+
+.links .container .link i {
+    font-size: 50px;
+    color: rgb(66, 83, 167);
+    margin-left: 5px;
+}
+
+.links .container .link a:hover i {
+    color: blue;
+}
+
+.links .container .para {
+    margin-left: 592px;
+    margin-top: 90px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: rgb(163, 163, 164);
+}
